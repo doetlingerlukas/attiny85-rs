@@ -6,7 +6,7 @@ use panic_halt as _;
 use attiny_hal::clock::*;
 use attiny_hal::delay::Delay;
 
-//#[no_mangle]
+#[no_mangle]
 fn main() -> ! {
   let dp = attiny_hal::Peripherals::take().unwrap();
   let pins = attiny_hal::pins!(dp);
