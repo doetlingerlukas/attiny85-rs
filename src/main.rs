@@ -1,6 +1,7 @@
 #![no_std]
 #![no_main]
 
+use embedded_hal::prelude::_embedded_hal_blocking_delay_DelayUs;
 use panic_halt as _;
 
 use attiny_hal::clock::*;
@@ -18,6 +19,6 @@ fn main() -> ! {
   loop {
     led.toggle();
 
-    //delay.delay_ms(1000);
+    delay.delay_us(1000u16);
   }
 }
