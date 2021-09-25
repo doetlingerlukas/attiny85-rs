@@ -11,6 +11,8 @@ The following is also needed to get the program on the microcontroller:
 - `avr-gcc` and `avr-objcopy`
 - [micronucleus](https://github.com/micronucleus/micronucleus) binary (place in `micronucleus` folder for the `Rakefile` to work)
 
+Make sure to also install drivers for bootloader, which you can find [here](https://github.com/digistump/DigistumpArduino/releases).
+
 ## How to run
 
 ```sh
